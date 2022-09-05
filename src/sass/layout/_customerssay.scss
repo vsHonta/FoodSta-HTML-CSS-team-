@@ -1,0 +1,218 @@
+// reset
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+// section
+.section__customers {
+  padding-top: 60px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 17px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 45px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 134px;
+  }
+}
+
+// styles start
+
+// это подключённый задний фон
+.customers-sub {
+  background-repeat: no-repeat;
+  background-size: 100% 789px;
+  background-image: url(../images/customerssay/background-mob.png);
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/customerssay/background-mob.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customerssay/background-tabl.png);
+    background-size: 100% 544px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/customerssay/background-desk.png);
+    background-size: 100% 647px;
+  }
+}
+
+// заголовки в двух секциях
+.customers-sub__title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.166;
+  }
+
+  margin-bottom: 20px;
+
+  color: $Black-text;
+}
+
+// это блок со спец. классами которые добавляют фикс. высоту
+.customers-sub__title--height {
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 66px;
+  }
+}
+.customers__desc--height {
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 32px;
+  }
+}
+// основные подписи к заголовкам
+.customers-sub__desc {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.142;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.187;
+  }
+
+  margin-bottom: 32px;
+
+  color: $Black-text;
+}
+
+.customers-sub__desc--margin {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+// список состоящих из двух карточек
+.customers__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  // @media screen and (max-width: 767px) {
+  //   margin-bottom: 17px;
+  // }
+
+  // @media screen and (min-width: 768px) and (max-width: 1279px) {
+  //   margin-bottom: 45px;
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //   margin-bottom: 134px;
+  // }
+}
+
+// структура карточки
+.customers__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  background-color: $White;
+  border-radius: 0px 30px 30px 30px;
+  height: 247px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 139px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 244px;
+    padding: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 14px;
+    width: 501px;
+    height: 227px;
+  }
+}
+
+//  аватарка пользователя и звёздочки
+.customers__stars-icons {
+  margin-bottom: 28px;
+}
+
+.customers__avatar {
+  width: 48px;
+  height: 48px;
+}
+
+// комментарий пользователя
+.customers__desc {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.1666;
+  }
+
+  margin-bottom: 40px;
+  color: $Black-text;
+}
+
+// обёртка аватарки пользователя и имени
+.customers__wrapper--flex {
+  display: flex;
+  align-items: center;
+}
+//  стили для имени пользователя
+.customers__name-wrapper {
+  margin-left: 16px;
+  border-right: 0.854167px solid $Green-text;
+  padding-right: 16px;
+}
+
+.customers__name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+
+  margin-bottom: 2px;
+}
+
+.customers__name-desc {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}

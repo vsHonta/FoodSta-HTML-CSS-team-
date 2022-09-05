@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  // padding-top: 72px;
+
+  color: $Black-text;
+  background-color: $Background-cl;
+}
+
+img {
+  display: block;
+  // width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
